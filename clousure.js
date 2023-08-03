@@ -49,3 +49,21 @@ let resutOuter = outer();
 // console.log(resutOuter());
 // console.log(resutOuter());
 // console.log(resutOuter());
+
+function newOuter() {
+  let newCounter = 0;
+
+  function newInner() {
+    return newCounter++;
+  }
+  return newInner;
+}
+
+let myNewFn = newOuter();
+console.log(myNewFn());
+console.log(myNewFn());
+
+let myNewFn1 = newOuter();
+console.log(myNewFn1());
+console.log(myNewFn1());
+console.log(myNewFn());
