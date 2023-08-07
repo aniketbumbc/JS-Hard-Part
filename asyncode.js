@@ -44,6 +44,7 @@ function delayCounter(target, wait) {}
 // After 1 second, log 1
 // After 2 seconds, log 2
 // After 3 seconds, log 3
+// After 3 seconds, log 4
 
 /* CHALLENGE 8 */
 
